@@ -1,0 +1,13 @@
+<nav class="nav-menu d-none d-lg-block">
+    <ul>
+        {{#menu}}
+        <li>
+            {{#links}}<a href="{{.}}">{{/links}}
+            {{^links}}<strong>{{/links}}
+                {{captions}}
+            {{#links}} </a> {{/links}}
+            {{^links}}</strong>{{/links}}
+        </li>
+        {{/menu}}
+    </ul>
+</nav><!-- .nav-menu -->
